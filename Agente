@@ -1,0 +1,54 @@
+// Classe astratta Agente
+abstract class Agente {
+    protected String nome;
+    protected String cognome;
+    protected String matricola;
+
+    public Agente(String nome, String cognome, String matricola) {
+        this.nome = nome;
+        this.cognome = cognome;
+        this.matricola = matricola;
+    }
+
+    // Metodo astratto da implementare nelle sottoclassi
+    public abstract void descriviLavoro();
+}
+
+// Classe concreta Poliziotto
+class Poliziotto extends Agente {
+
+    public Poliziotto(String nome, String cognome, String matricola) {
+        super(nome, cognome, matricola);
+    }
+
+    @Override
+    public void descriviLavoro() {
+        System.out.println("Poliziotto " + nome + " " + cognome + ", Matricola: " + matricola + 
+                           " - Mi occupo di pattugliare le strade e garantire la sicurezza pubblica.");
+    }
+}
+
+// Classe concreta Detective
+class Detective extends Agente {
+
+    public Detective(String nome, String cognome, String matricola) {
+        super(nome, cognome, matricola);
+    }
+
+    @Override
+    public void descriviLavoro() {
+        System.out.println("Detective " + nome + " " + cognome + ", Matricola: " + matricola + 
+                           " - Mi occupo di investigare sui crimini e risolvere i casi complessi.");
+    }
+}
+
+// Classe principale per il test
+public class GestioneDipartimento {
+    public static void main(String[] args) {
+        Poliziotto poliziotto = new Poliziotto("Mario", "Rossi", "123A");
+        Detective detective = new Detective("Luigi", "Bianchi", "456B");
+
+        poliziotto.descriviLavoro();
+        detective.descriviLavoro();
+    }
+}
