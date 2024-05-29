@@ -1,0 +1,11 @@
+Esempio di risoluzione:
+Definizione dell'interfaccia DispositivoDiSicurezza:
+
+Spiega quali metodi generici sono necessari (ad esempio, attiva(), disattiva(), verificaStato()).
+Implementazione delle classi concrete:
+
+Descrivi le classi per l'estintore, l'allarme antincendio, il sistema di ventilazione d'emergenza e il kit di pronto soccorso, e come implementano l'interfaccia.
+Gestione della collezione:
+
+Descrivi come utilizzeresti una lista (ad esempio, ArrayList<DispositivoDiSicurezza>) per memorizzare e gestire i dispositivi.
+Spiega come iterare attraverso la lista per chiamare i metodi verificaStato() e assicurarti che tutti i dispositivi siano operativi.
