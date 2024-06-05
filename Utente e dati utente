@@ -1,0 +1,67 @@
+// Classe DatiFiglio.java
+public class DatiFiglio {
+    private String nome;
+    private int età;
+
+    // Costruttore
+    public DatiFiglio(String nome, int età) {
+        this.nome = nome;
+        this.età = età;
+    }
+
+    // Getters e Setters
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public int getEtà() {
+        return età;
+    }
+
+    public void setEtà(int età) {
+        this.età = età;
+    }
+}
+
+// Classe DatiUtente.java
+public class DatiUtente {
+    private String username;
+    private String email;
+    private DatiFiglio datiFiglio;
+
+    // Costruttore
+    public DatiUtente(String username, String email, DatiFiglio datiFiglio) {
+        this.username = username;
+        this.email = email;
+        this.datiFiglio = datiFiglio;
+    }
+
+    // Getters e Setters
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public DatiFiglio getDatiFiglio() {
+        return datiFiglio;
+    }
+
+    public void setDatiFiglio(DatiFiglio datiFiglio) {
+        this.datiFiglio = datiFiglio;
+    }
+}
