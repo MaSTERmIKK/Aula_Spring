@@ -1,0 +1,8 @@
+{
+  "username": "utente123",
+  "email": "utente@example.com",
+  "datiFiglio": {
+    "nome": "Marco",
+    "età": 12
+  }
+}
