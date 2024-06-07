@@ -1,0 +1,7 @@
+<!-- aggiungi.html -->
+<form th:action="@{/aggiungi}" th:object="${ricetta}" method="post">
+    <input type="text" th:field="*{nome}" placeholder="Nome della ricetta">
+    <textarea th:field="*{ingredienti}" placeholder="Ingredienti"></textarea>
+    <textarea th:field="*{procedimento}" placeholder="Procedimento"></textarea>
+    <button type="submit">Invia</button>
+</form>
